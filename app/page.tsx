@@ -1,4 +1,6 @@
+import CustomField from "@/components/CustomField";
 import Hero from "@/components/Hero";
+import SearchBar from "@/components/SearchBar";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,10 +15,13 @@ export default function Home() {
         </div>
 
         <div className="home__filters">
-          
+          <SearchBar />
         </div>
 
-        <div className="home__filters-container"></div>
+        <div className="home__filters-container">
+          <CustomField title="fuel" />
+          <CustomField title="year" />
+        </div>
       </div>
     </main>
   );
